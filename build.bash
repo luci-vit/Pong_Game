@@ -1,1 +1,1 @@
-g++ main.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+g++ src/main.cpp src/ball.cpp src/racket_player.cpp src/racket_computer.cpp -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
