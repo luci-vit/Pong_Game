@@ -1,6 +1,6 @@
 #include "../include/racket_computer.hpp"
 
-void RacketComputer::setRacketPosition(int x, int y){
+void RacketComputer::setRacketPosition(float x, float y){
     this->rectangle_position.x = x;
     this->rectangle_position.y = y;
 }
@@ -9,7 +9,7 @@ Vector2 RacketComputer::getRacketPosition(){
     return this->rectangle_position;
 }
 
-void RacketComputer::setRacketDimensions(int heigh, int width){
+void RacketComputer::setRacketDimensions(float heigh, float width){
     this->rectangle_dimensions.x = heigh;
     this->rectangle_dimensions.y = width; 
 }
@@ -27,7 +27,6 @@ void RacketComputer::updateRacketPositions(Vector2 ball_position)
     }
 
     if(ball_position.y <= this->getRacketPosition().y + this->getRacketDimensions().y/2){
-        std::cout << "A posição y da bola é: " << ball_position.y << std::endl;
         rectangle_position.y -= speed_y;
     }
 

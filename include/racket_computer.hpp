@@ -8,12 +8,12 @@ class RacketComputer: public RacketPlayer {
 private:
     Vector2 rectangle_position;
     Vector2 rectangle_dimensions;
-    int speed_y=6;
+    int speed_y=5;
     Ball ball;
 public:
-    void setRacketPosition(int x, int y);
+    void setRacketPosition(float x, float y);
     Vector2 getRacketPosition();
-    void setRacketDimensions(int heigh, int width);
+    void setRacketDimensions(float heigh, float width);
     Vector2 getRacketDimensions();
     void updateRacketPositions(Vector2 ball_position);
     void DrawRacket();

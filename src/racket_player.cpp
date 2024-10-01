@@ -1,6 +1,6 @@
 #include "../include/racket_player.hpp"
 
-void RacketPlayer::setRacketPosition(int x, int y){
+void RacketPlayer::setRacketPosition(float x, float y){
     this->rectangle_position.x = x;
     this->rectangle_position.y = y;
 }
@@ -9,7 +9,7 @@ Vector2 RacketPlayer::getRacketPosition(){
     return this->rectangle_position;
 }
 
-void RacketPlayer::setRacketDimensions(int heigh, int width){
+void RacketPlayer::setRacketDimensions(float heigh, float width){
     this->rectangle_dimensions.y = width; 
     this->rectangle_dimensions.x = heigh;
 }
