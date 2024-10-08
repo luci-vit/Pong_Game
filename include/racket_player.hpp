@@ -4,7 +4,7 @@
 
 class RacketPlayer{
 
-private:
+protected:
     Vector2 rectangle_position;
     Vector2 rectangle_dimensions;
     int speed_y=5;
