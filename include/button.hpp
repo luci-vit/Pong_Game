@@ -11,6 +11,6 @@ class Button{
         Button(const char* imagePath, Vector2 imagePostion);
         ~Button();
         bool isPressed(Vector2 mousePos, bool mousePress);
-        void Draw();
+        void Draw(int width, int height);
 };
 #endif

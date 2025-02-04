@@ -9,9 +9,9 @@ Button::~Button(){
     UnloadTexture(texture);
 }
 
-void Button::Draw(){ 
+void Button::Draw(int width, int height){ 
     Image button_image = LoadImageFromTexture(texture);
-    ImageResize(&button_image, 192, 118);
+    ImageResize(&button_image, width, height);
     texture = LoadTextureFromImage(button_image);
     UnloadImage(button_image);
 
@@ -20,6 +20,7 @@ void Button::Draw(){
 
 bool Button::isPressed(Vector2 mousePos, bool mousePress){
     Rectangle rec = {position.x, position.y, texture.width, texture.height};
+    
 
     if(CheckCollisionPointRec(mousePos, rec) && mousePress){
         return true;

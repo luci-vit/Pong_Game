@@ -2,11 +2,11 @@
 
 void RacketPlayer2::updateRacketPositions_pl2()
 {
-    if (IsKeyDown(KEY_UP))
+    if (IsKeyDown(KEY_W))
     {
         rectangle_position.y -= speed_y;
     }
-    if (IsKeyDown(KEY_DOWN))
+    if (IsKeyDown(KEY_S))
     {
         rectangle_position.y += speed_y;
     }

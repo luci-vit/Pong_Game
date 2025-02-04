@@ -15,6 +15,7 @@ class Ball {
         int circle_radius;
         int speed_x=6, speed_y=6;
         Color green_ball = {210, 255, 79, 255};
+        
 
     public:
         void setCirclePosition(float x, float y);

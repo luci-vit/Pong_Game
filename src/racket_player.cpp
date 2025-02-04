@@ -20,11 +20,11 @@ Vector2 RacketPlayer::getRacketDimensions(){
 
 void RacketPlayer::updateRacketPositions(){
 
-    if (IsKeyDown(KEY_W))
+    if (IsKeyDown(KEY_UP))
     {
         rectangle_position.y -= speed_y;
     }
-    if (IsKeyDown(KEY_S))
+    if (IsKeyDown(KEY_DOWN))
     {
         rectangle_position.y += speed_y;
     }
@@ -37,6 +37,6 @@ void RacketPlayer::updateRacketPositions(){
     }
 }
 
-void RacketPlayer::DrawRacket(){
-    DrawRectangleV(getRacketPosition(), getRacketDimensions(), WHITE);
+void RacketPlayer::DrawRacket(Color racketColor){
+    DrawRectangleV(getRacketPosition(), getRacketDimensions(), racketColor);
 }
